@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG new reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Command_line_suite">
+              <span class="suite-name border-passed">Command line suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Command_line_suite">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Command_line_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Command_line_suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Command_line_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Command_line_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Command_line_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Command_line_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">34 methods,   34 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods passed suite-Command_line_suite"> (hide)</a> <!-- hide-methods passed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods passed suite-Command_line_suite"> (show)</a> <!-- show-methods passed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Command_line_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="service.cantor.CantorMokitoTest" hash-for-method="shouldCalculateMoneyExchangeForGivenCurrency(EUR, EUR, 100.0, 75.0, 100.0, 3.0, 4.0, 4.0)">shouldCalculateMoneyExchangeForGivenCurrency(EUR, EUR, 100.0, 75.0, 100.0, 3.0, 4.0, 4.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="service.cantor.CantorMokitoTest" hash-for-method="shouldCalculateMoneyExchangeForGivenCurrency(EUR, USD, 100.0, 150.0, 100.0, 3.0, 4.0, 2.0)">shouldCalculateMoneyExchangeForGivenCurrency(EUR, USD, 100.0, 150.0, 100.0, 3.0, 4.0, 2.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="service.cantor.CantorMokitoTest" hash-for-method="shouldCalculateMoneyExchangeForGivenCurrency(PLN, EUR, 100.0, 25.0, 0.0, 1.0, 1.0, 4.0)">shouldCalculateMoneyExchangeForGivenCurrency(PLN, EUR, 100.0, 25.0, 0.0, 1.0, 1.0, 4.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="service.cantor.CantorMokitoTest" hash-for-method="shouldCalculateMoneyExchangeForGivenCurrency(EUR, PLN, 100.0, 300.0, 100.0, 3.0, 4.0, 1.0)">shouldCalculateMoneyExchangeForGivenCurrency(EUR, PLN, 100.0, 300.0, 100.0, 3.0, 4.0, 1.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="service.cantor.CantorMokitoTest" hash-for-method="shouldCreateCurrencyTableWithOneRow">shouldCreateCurrencyTableWithOneRow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="service.cantor.CantorMokitoTest" hash-for-method="shouldCreateCustomerTableWithOneRow">shouldCreateCustomerTableWithOneRow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="service.cantor.CantorMokitoTest" hash-for-method="shouldCreateEmptyCurrencyTable">shouldCreateEmptyCurrencyTable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="service.cantor.CantorMokitoTest" hash-for-method="shouldCreateEmptyCustomerTable">shouldCreateEmptyCustomerTable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="service.statistic.StatisticTest" hash-for-method="shouldCreateEmptyFinanceMonthReport(Wrzesień, Wrzesień, conditions.raport.MonthCondition@427a160f)">shouldCreateEmptyFinanceMonthReport(Wrzesień, Wrzesień, conditions.raport.MonthCondition@427a160f)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="service.statistic.StatisticTest" hash-for-method="shouldCreateEmptyFinanceMonthReport(Wrzesień, Grudzień, conditions.raport.PeriodOfMonthsCondition@454034)">shouldCreateEmptyFinanceMonthReport(Wrzesień, Grudzień, conditions.raport.PeriodOfMonthsCondition@454034)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="service.statistic.StatisticTest" hash-for-method="shouldCreateEmptyFinanceMonthReport(Wrzesień, Maj, conditions.raport.PeriodOfMonthsCondition@5d3e54e1)">shouldCreateEmptyFinanceMonthReport(Wrzesień, Maj, conditions.raport.PeriodOfMonthsCondition@5d3e54e1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="service.statistic.StatisticMockitoTest" hash-for-method="shouldCreateEmptyFinanceMonthReportWithCorrectTitle(Wrzesień, Maj, conditions.raport.PeriodOfMonthsCondition@3e28ab69)">shouldCreateEmptyFinanceMonthReportWithCorrectTitle(Wrzesień, Maj, conditions.raport.PeriodOfMonthsCondition@3e28ab69)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="service.statistic.StatisticMockitoTest" hash-for-method="shouldCreateEmptyFinanceMonthReportWithCorrectTitle(Wrzesień, Grudzień, conditions.raport.PeriodOfMonthsCondition@2736af9a)">shouldCreateEmptyFinanceMonthReportWithCorrectTitle(Wrzesień, Grudzień, conditions.raport.PeriodOfMonthsCondition@2736af9a)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="service.statistic.StatisticMockitoTest" hash-for-method="shouldCreateEmptyFinanceMonthReportWithCorrectTitle(Wrzesień, Wrzesień, conditions.raport.MonthCondition@7742bb92)">shouldCreateEmptyFinanceMonthReportWithCorrectTitle(Wrzesień, Wrzesień, conditions.raport.MonthCondition@7742bb92)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="service.statistic.StatisticTest" hash-for-method="shouldCreateEmptyFinanceYearReport(2012, 2013, conditions.raport.PeriodOfYearsCondition@600d9a60)">shouldCreateEmptyFinanceYearReport(2012, 2013, conditions.raport.PeriodOfYearsCondition@600d9a60)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="service.statistic.StatisticTest" hash-for-method="shouldCreateEmptyFinanceYearReport(2012, 2011, conditions.raport.PeriodOfYearsCondition@1aaa8aa5)">shouldCreateEmptyFinanceYearReport(2012, 2011, conditions.raport.PeriodOfYearsCondition@1aaa8aa5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="service.statistic.StatisticTest" hash-for-method="shouldCreateEmptyFinanceYearReport(2012, 2012, conditions.raport.IntegerCondition@1d1245e4)">shouldCreateEmptyFinanceYearReport(2012, 2012, conditions.raport.IntegerCondition@1d1245e4)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="service.statistic.StatisticMockitoTest" hash-for-method="shouldCreateEmptyFinanceYearReportWithCorrectTitle(2012, 2011, conditions.raport.PeriodOfYearsCondition@3fcf8dad)">shouldCreateEmptyFinanceYearReportWithCorrectTitle(2012, 2011, conditions.raport.PeriodOfYearsCondition@3fcf8dad)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="service.statistic.StatisticMockitoTest" hash-for-method="shouldCreateEmptyFinanceYearReportWithCorrectTitle(2012, 2012, conditions.raport.IntegerCondition@7765da10)">shouldCreateEmptyFinanceYearReportWithCorrectTitle(2012, 2012, conditions.raport.IntegerCondition@7765da10)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="service.statistic.StatisticMockitoTest" hash-for-method="shouldCreateEmptyFinanceYearReportWithCorrectTitle(2012, 2013, conditions.raport.PeriodOfYearsCondition@32746450)">shouldCreateEmptyFinanceYearReportWithCorrectTitle(2012, 2013, conditions.raport.PeriodOfYearsCondition@32746450)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="service.statistic.StatisticTest" hash-for-method="shouldCreateEmptyHotelReport(Raportu z wykorzystania pokoi w klasie, 2012, Wrzesień, null, pokój jednosobowy)">shouldCreateEmptyHotelReport(Raportu z wykorzystania pokoi w klasie, 2012, Wrzesień, null, pokój jednosobowy)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="service.statistic.StatisticTest" hash-for-method="shouldCreateEmptyHotelReport(Raportu z wykorzystania typów usług, 2012, Wrzesień, null, pokój jednosobowy)">shouldCreateEmptyHotelReport(Raportu z wykorzystania typów usług, 2012, Wrzesień, null, pokój jednosobowy)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="service.statistic.StatisticTest" hash-for-method="shouldCreateEmptyHotelReport(Raportu z wykorzystania klas pokoi, 2012, Wrzesień, null, null)">shouldCreateEmptyHotelReport(Raportu z wykorzystania klas pokoi, 2012, Wrzesień, null, null)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="service.statistic.StatisticTest" hash-for-method="shouldCreateEmptyHotelReport(Raportu z wybranej uslugi, 2012, Wrzesień, rekreacja, null)">shouldCreateEmptyHotelReport(Raportu z wybranej uslugi, 2012, Wrzesień, rekreacja, null)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="service.statistic.StatisticMockitoTest" hash-for-method="shouldCreateEmptyRoomTypesReport">shouldCreateEmptyRoomTypesReport</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="service.statistic.StatisticMockitoTest" hash-for-method="shouldCreateEmptyRoomsInTypeReport">shouldCreateEmptyRoomsInTypeReport</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="service.statistic.StatisticMockitoTest" hash-for-method="shouldCreateEmptyServiceReport">shouldCreateEmptyServiceReport</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="service.statistic.StatisticMockitoTest" hash-for-method="shouldCreateEmptyServiceTypesReport">shouldCreateEmptyServiceTypesReport</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="service.statistic.StatisticMockitoTest" hash-for-method="shouldCreateFinanceMonthReportWithCorrectTitle">shouldCreateFinanceMonthReportWithCorrectTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="service.statistic.StatisticMockitoTest" hash-for-method="shouldCreateFinanceYearReportWithCorrectTitle">shouldCreateFinanceYearReportWithCorrectTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="service.statistic.StatisticMockitoTest" hash-for-method="shouldCreateRoomTypesReport">shouldCreateRoomTypesReport</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="service.statistic.StatisticMockitoTest" hash-for-method="shouldCreateRoomsInTypeReport">shouldCreateRoomsInTypeReport</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="service.statistic.StatisticMockitoTest" hash-for-method="shouldCreateServiceReport">shouldCreateServiceReport</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="service.statistic.StatisticMockitoTest" hash-for-method="shouldCreateServiceTypesReport">shouldCreateServiceTypesReport</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Command_line_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Command_line_suite" class="panel Command_line_suite">
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">service.cantor.CantorMokitoTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldCalculateMoneyExchangeForGivenCurrency(EUR, EUR, 100.0, 75.0, 100.0, 3.0, 4.0, 4.0)">
+                  </a> <!-- shouldCalculateMoneyExchangeForGivenCurrency(EUR, EUR, 100.0, 75.0, 100.0, 3.0, 4.0, 4.0) -->
+                  <span class="method-name">shouldCalculateMoneyExchangeForGivenCurrency</span>
+                  <span class="parameters">(EUR, EUR, 100.0, 75.0, 100.0, 3.0, 4.0, 4.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldCalculateMoneyExchangeForGivenCurrency(EUR, USD, 100.0, 150.0, 100.0, 3.0, 4.0, 2.0)">
+                  </a> <!-- shouldCalculateMoneyExchangeForGivenCurrency(EUR, USD, 100.0, 150.0, 100.0, 3.0, 4.0, 2.0) -->
+                  <span class="method-name">shouldCalculateMoneyExchangeForGivenCurrency</span>
+                  <span class="parameters">(EUR, USD, 100.0, 150.0, 100.0, 3.0, 4.0, 2.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldCalculateMoneyExchangeForGivenCurrency(PLN, EUR, 100.0, 25.0, 0.0, 1.0, 1.0, 4.0)">
+                  </a> <!-- shouldCalculateMoneyExchangeForGivenCurrency(PLN, EUR, 100.0, 25.0, 0.0, 1.0, 1.0, 4.0) -->
+                  <span class="method-name">shouldCalculateMoneyExchangeForGivenCurrency</span>
+                  <span class="parameters">(PLN, EUR, 100.0, 25.0, 0.0, 1.0, 1.0, 4.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldCalculateMoneyExchangeForGivenCurrency(EUR, PLN, 100.0, 300.0, 100.0, 3.0, 4.0, 1.0)">
+                  </a> <!-- shouldCalculateMoneyExchangeForGivenCurrency(EUR, PLN, 100.0, 300.0, 100.0, 3.0, 4.0, 1.0) -->
+                  <span class="method-name">shouldCalculateMoneyExchangeForGivenCurrency</span>
+                  <span class="parameters">(EUR, PLN, 100.0, 300.0, 100.0, 3.0, 4.0, 1.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldCreateCurrencyTableWithOneRow">
+                  </a> <!-- shouldCreateCurrencyTableWithOneRow -->
+                  <span class="method-name">shouldCreateCurrencyTableWithOneRow</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldCreateCustomerTableWithOneRow">
+                  </a> <!-- shouldCreateCustomerTableWithOneRow -->
+                  <span class="method-name">shouldCreateCustomerTableWithOneRow</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldCreateEmptyCurrencyTable">
+                  </a> <!-- shouldCreateEmptyCurrencyTable -->
+                  <span class="method-name">shouldCreateEmptyCurrencyTable</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldCreateEmptyCustomerTable">
+                  </a> <!-- shouldCreateEmptyCustomerTable -->
+                  <span class="method-name">shouldCreateEmptyCustomerTable</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">service.statistic.StatisticTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldCreateEmptyFinanceMonthReport(Wrzesień, Wrzesień, conditions.raport.MonthCondition@427a160f)">
+                  </a> <!-- shouldCreateEmptyFinanceMonthReport(Wrzesień, Wrzesień, conditions.raport.MonthCondition@427a160f) -->
+                  <span class="method-name">shouldCreateEmptyFinanceMonthReport</span>
+                  <span class="parameters">(Wrzesień, Wrzesień, conditions.raport.MonthCondition@427a160f)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldCreateEmptyFinanceMonthReport(Wrzesień, Grudzień, conditions.raport.PeriodOfMonthsCondition@454034)">
+                  </a> <!-- shouldCreateEmptyFinanceMonthReport(Wrzesień, Grudzień, conditions.raport.PeriodOfMonthsCondition@454034) -->
+                  <span class="method-name">shouldCreateEmptyFinanceMonthReport</span>
+                  <span class="parameters">(Wrzesień, Grudzień, conditions.raport.PeriodOfMonthsCondition@454034)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldCreateEmptyFinanceMonthReport(Wrzesień, Maj, conditions.raport.PeriodOfMonthsCondition@5d3e54e1)">
+                  </a> <!-- shouldCreateEmptyFinanceMonthReport(Wrzesień, Maj, conditions.raport.PeriodOfMonthsCondition@5d3e54e1) -->
+                  <span class="method-name">shouldCreateEmptyFinanceMonthReport</span>
+                  <span class="parameters">(Wrzesień, Maj, conditions.raport.PeriodOfMonthsCondition@5d3e54e1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldCreateEmptyFinanceYearReport(2012, 2013, conditions.raport.PeriodOfYearsCondition@600d9a60)">
+                  </a> <!-- shouldCreateEmptyFinanceYearReport(2012, 2013, conditions.raport.PeriodOfYearsCondition@600d9a60) -->
+                  <span class="method-name">shouldCreateEmptyFinanceYearReport</span>
+                  <span class="parameters">(2012, 2013, conditions.raport.PeriodOfYearsCondition@600d9a60)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldCreateEmptyFinanceYearReport(2012, 2011, conditions.raport.PeriodOfYearsCondition@1aaa8aa5)">
+                  </a> <!-- shouldCreateEmptyFinanceYearReport(2012, 2011, conditions.raport.PeriodOfYearsCondition@1aaa8aa5) -->
+                  <span class="method-name">shouldCreateEmptyFinanceYearReport</span>
+                  <span class="parameters">(2012, 2011, conditions.raport.PeriodOfYearsCondition@1aaa8aa5)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldCreateEmptyFinanceYearReport(2012, 2012, conditions.raport.IntegerCondition@1d1245e4)">
+                  </a> <!-- shouldCreateEmptyFinanceYearReport(2012, 2012, conditions.raport.IntegerCondition@1d1245e4) -->
+                  <span class="method-name">shouldCreateEmptyFinanceYearReport</span>
+                  <span class="parameters">(2012, 2012, conditions.raport.IntegerCondition@1d1245e4)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldCreateEmptyHotelReport(Raportu z wykorzystania pokoi w klasie, 2012, Wrzesień, null, pokój jednosobowy)">
+                  </a> <!-- shouldCreateEmptyHotelReport(Raportu z wykorzystania pokoi w klasie, 2012, Wrzesień, null, pokój jednosobowy) -->
+                  <span class="method-name">shouldCreateEmptyHotelReport</span>
+                  <span class="parameters">(Raportu z wykorzystania pokoi w klasie, 2012, Wrzesień, <NULL>, pokój jednosobowy)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldCreateEmptyHotelReport(Raportu z wykorzystania typów usług, 2012, Wrzesień, null, pokój jednosobowy)">
+                  </a> <!-- shouldCreateEmptyHotelReport(Raportu z wykorzystania typów usług, 2012, Wrzesień, null, pokój jednosobowy) -->
+                  <span class="method-name">shouldCreateEmptyHotelReport</span>
+                  <span class="parameters">(Raportu z wykorzystania typów usług, 2012, Wrzesień, <NULL>, pokój jednosobowy)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldCreateEmptyHotelReport(Raportu z wykorzystania klas pokoi, 2012, Wrzesień, null, null)">
+                  </a> <!-- shouldCreateEmptyHotelReport(Raportu z wykorzystania klas pokoi, 2012, Wrzesień, null, null) -->
+                  <span class="method-name">shouldCreateEmptyHotelReport</span>
+                  <span class="parameters">(Raportu z wykorzystania klas pokoi, 2012, Wrzesień, <NULL>, <NULL>)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldCreateEmptyHotelReport(Raportu z wybranej uslugi, 2012, Wrzesień, rekreacja, null)">
+                  </a> <!-- shouldCreateEmptyHotelReport(Raportu z wybranej uslugi, 2012, Wrzesień, rekreacja, null) -->
+                  <span class="method-name">shouldCreateEmptyHotelReport</span>
+                  <span class="parameters">(Raportu z wybranej uslugi, 2012, Wrzesień, rekreacja, <NULL>)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">service.statistic.StatisticMockitoTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldCreateEmptyFinanceMonthReportWithCorrectTitle(Wrzesień, Maj, conditions.raport.PeriodOfMonthsCondition@3e28ab69)">
+                  </a> <!-- shouldCreateEmptyFinanceMonthReportWithCorrectTitle(Wrzesień, Maj, conditions.raport.PeriodOfMonthsCondition@3e28ab69) -->
+                  <span class="method-name">shouldCreateEmptyFinanceMonthReportWithCorrectTitle</span>
+                  <span class="parameters">(Wrzesień, Maj, conditions.raport.PeriodOfMonthsCondition@3e28ab69)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldCreateEmptyFinanceMonthReportWithCorrectTitle(Wrzesień, Grudzień, conditions.raport.PeriodOfMonthsCondition@2736af9a)">
+                  </a> <!-- shouldCreateEmptyFinanceMonthReportWithCorrectTitle(Wrzesień, Grudzień, conditions.raport.PeriodOfMonthsCondition@2736af9a) -->
+                  <span class="method-name">shouldCreateEmptyFinanceMonthReportWithCorrectTitle</span>
+                  <span class="parameters">(Wrzesień, Grudzień, conditions.raport.PeriodOfMonthsCondition@2736af9a)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldCreateEmptyFinanceMonthReportWithCorrectTitle(Wrzesień, Wrzesień, conditions.raport.MonthCondition@7742bb92)">
+                  </a> <!-- shouldCreateEmptyFinanceMonthReportWithCorrectTitle(Wrzesień, Wrzesień, conditions.raport.MonthCondition@7742bb92) -->
+                  <span class="method-name">shouldCreateEmptyFinanceMonthReportWithCorrectTitle</span>
+                  <span class="parameters">(Wrzesień, Wrzesień, conditions.raport.MonthCondition@7742bb92)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldCreateEmptyFinanceYearReportWithCorrectTitle(2012, 2011, conditions.raport.PeriodOfYearsCondition@3fcf8dad)">
+                  </a> <!-- shouldCreateEmptyFinanceYearReportWithCorrectTitle(2012, 2011, conditions.raport.PeriodOfYearsCondition@3fcf8dad) -->
+                  <span class="method-name">shouldCreateEmptyFinanceYearReportWithCorrectTitle</span>
+                  <span class="parameters">(2012, 2011, conditions.raport.PeriodOfYearsCondition@3fcf8dad)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldCreateEmptyFinanceYearReportWithCorrectTitle(2012, 2012, conditions.raport.IntegerCondition@7765da10)">
+                  </a> <!-- shouldCreateEmptyFinanceYearReportWithCorrectTitle(2012, 2012, conditions.raport.IntegerCondition@7765da10) -->
+                  <span class="method-name">shouldCreateEmptyFinanceYearReportWithCorrectTitle</span>
+                  <span class="parameters">(2012, 2012, conditions.raport.IntegerCondition@7765da10)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldCreateEmptyFinanceYearReportWithCorrectTitle(2012, 2013, conditions.raport.PeriodOfYearsCondition@32746450)">
+                  </a> <!-- shouldCreateEmptyFinanceYearReportWithCorrectTitle(2012, 2013, conditions.raport.PeriodOfYearsCondition@32746450) -->
+                  <span class="method-name">shouldCreateEmptyFinanceYearReportWithCorrectTitle</span>
+                  <span class="parameters">(2012, 2013, conditions.raport.PeriodOfYearsCondition@32746450)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldCreateEmptyRoomTypesReport">
+                  </a> <!-- shouldCreateEmptyRoomTypesReport -->
+                  <span class="method-name">shouldCreateEmptyRoomTypesReport</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldCreateEmptyRoomsInTypeReport">
+                  </a> <!-- shouldCreateEmptyRoomsInTypeReport -->
+                  <span class="method-name">shouldCreateEmptyRoomsInTypeReport</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldCreateEmptyServiceReport">
+                  </a> <!-- shouldCreateEmptyServiceReport -->
+                  <span class="method-name">shouldCreateEmptyServiceReport</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldCreateEmptyServiceTypesReport">
+                  </a> <!-- shouldCreateEmptyServiceTypesReport -->
+                  <span class="method-name">shouldCreateEmptyServiceTypesReport</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldCreateFinanceMonthReportWithCorrectTitle">
+                  </a> <!-- shouldCreateFinanceMonthReportWithCorrectTitle -->
+                  <span class="method-name">shouldCreateFinanceMonthReportWithCorrectTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldCreateFinanceYearReportWithCorrectTitle">
+                  </a> <!-- shouldCreateFinanceYearReportWithCorrectTitle -->
+                  <span class="method-name">shouldCreateFinanceYearReportWithCorrectTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldCreateRoomTypesReport">
+                  </a> <!-- shouldCreateRoomTypesReport -->
+                  <span class="method-name">shouldCreateRoomTypesReport</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldCreateRoomsInTypeReport">
+                  </a> <!-- shouldCreateRoomsInTypeReport -->
+                  <span class="method-name">shouldCreateRoomsInTypeReport</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldCreateServiceReport">
+                  </a> <!-- shouldCreateServiceReport -->
+                  <span class="method-name">shouldCreateServiceReport</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldCreateServiceTypesReport">
+                  </a> <!-- shouldCreateServiceTypesReport -->
+                  <span class="method-name">shouldCreateServiceTypesReport</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+        </div> <!-- panel Command_line_suite -->
+        <div panel-name="test-xml-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;Command line suite&quot;&gt;
+  &lt;test name=&quot;Command line test&quot; preserve-order=&quot;false&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;service.statistic.StatisticMockitoTest&quot;/&gt;
+      &lt;class name=&quot;service.statistic.StatisticTest&quot;/&gt;
+      &lt;class name=&quot;service.cantor.CantorMokitoTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Command line test --&gt;
+&lt;/suite&gt; &lt;!-- Command line suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Command line test (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Command_line_suite');
+function tableData_Command_line_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(34);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'shouldCalculateMoneyExchangeForGivenCurrency')
+data.setCell(0, 2, 'service.cantor.CantorMokitoTest')
+data.setCell(0, 3, 602);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'shouldCreateFinanceMonthReportWithCorrectTitle')
+data.setCell(1, 2, 'service.statistic.StatisticMockitoTest')
+data.setCell(1, 3, 54);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'shouldCreateEmptyFinanceMonthReportWithCorrectTitle')
+data.setCell(2, 2, 'service.statistic.StatisticMockitoTest')
+data.setCell(2, 3, 29);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'shouldCreateRoomsInTypeReport')
+data.setCell(3, 2, 'service.statistic.StatisticMockitoTest')
+data.setCell(3, 3, 16);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'shouldCreateCurrencyTableWithOneRow')
+data.setCell(4, 2, 'service.cantor.CantorMokitoTest')
+data.setCell(4, 3, 15);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'shouldCreateFinanceYearReportWithCorrectTitle')
+data.setCell(5, 2, 'service.statistic.StatisticMockitoTest')
+data.setCell(5, 3, 15);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'shouldCreateRoomTypesReport')
+data.setCell(6, 2, 'service.statistic.StatisticMockitoTest')
+data.setCell(6, 3, 15);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'shouldCreateServiceTypesReport')
+data.setCell(7, 2, 'service.statistic.StatisticMockitoTest')
+data.setCell(7, 3, 15);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'shouldCreateEmptyFinanceMonthReport')
+data.setCell(8, 2, 'service.statistic.StatisticTest')
+data.setCell(8, 3, 14);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'shouldCreateServiceReport')
+data.setCell(9, 2, 'service.statistic.StatisticMockitoTest')
+data.setCell(9, 3, 12);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'shouldCreateCustomerTableWithOneRow')
+data.setCell(10, 2, 'service.cantor.CantorMokitoTest')
+data.setCell(10, 3, 9);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'shouldCreateEmptyHotelReport')
+data.setCell(11, 2, 'service.statistic.StatisticTest')
+data.setCell(11, 3, 6);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'shouldCreateEmptyHotelReport')
+data.setCell(12, 2, 'service.statistic.StatisticTest')
+data.setCell(12, 3, 5);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'shouldCreateEmptyFinanceYearReport')
+data.setCell(13, 2, 'service.statistic.StatisticTest')
+data.setCell(13, 3, 5);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'shouldCreateEmptyHotelReport')
+data.setCell(14, 2, 'service.statistic.StatisticTest')
+data.setCell(14, 3, 5);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'shouldCreateEmptyHotelReport')
+data.setCell(15, 2, 'service.statistic.StatisticTest')
+data.setCell(15, 3, 4);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'shouldCreateEmptyFinanceYearReport')
+data.setCell(16, 2, 'service.statistic.StatisticTest')
+data.setCell(16, 3, 4);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'shouldCreateEmptyFinanceMonthReport')
+data.setCell(17, 2, 'service.statistic.StatisticTest')
+data.setCell(17, 3, 4);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'shouldCreateEmptyServiceReport')
+data.setCell(18, 2, 'service.statistic.StatisticMockitoTest')
+data.setCell(18, 3, 4);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'shouldCreateEmptyFinanceMonthReport')
+data.setCell(19, 2, 'service.statistic.StatisticTest')
+data.setCell(19, 3, 3);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'shouldCreateEmptyServiceTypesReport')
+data.setCell(20, 2, 'service.statistic.StatisticMockitoTest')
+data.setCell(20, 3, 3);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'shouldCreateEmptyFinanceYearReport')
+data.setCell(21, 2, 'service.statistic.StatisticTest')
+data.setCell(21, 3, 3);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'shouldCreateEmptyRoomsInTypeReport')
+data.setCell(22, 2, 'service.statistic.StatisticMockitoTest')
+data.setCell(22, 3, 3);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'shouldCalculateMoneyExchangeForGivenCurrency')
+data.setCell(23, 2, 'service.cantor.CantorMokitoTest')
+data.setCell(23, 3, 3);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'shouldCreateEmptyFinanceMonthReportWithCorrectTitle')
+data.setCell(24, 2, 'service.statistic.StatisticMockitoTest')
+data.setCell(24, 3, 2);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'shouldCalculateMoneyExchangeForGivenCurrency')
+data.setCell(25, 2, 'service.cantor.CantorMokitoTest')
+data.setCell(25, 3, 2);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'shouldCreateEmptyFinanceYearReportWithCorrectTitle')
+data.setCell(26, 2, 'service.statistic.StatisticMockitoTest')
+data.setCell(26, 3, 2);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'shouldCalculateMoneyExchangeForGivenCurrency')
+data.setCell(27, 2, 'service.cantor.CantorMokitoTest')
+data.setCell(27, 3, 2);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'shouldCreateEmptyFinanceYearReportWithCorrectTitle')
+data.setCell(28, 2, 'service.statistic.StatisticMockitoTest')
+data.setCell(28, 3, 2);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'shouldCreateEmptyFinanceMonthReportWithCorrectTitle')
+data.setCell(29, 2, 'service.statistic.StatisticMockitoTest')
+data.setCell(29, 3, 2);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'shouldCreateEmptyRoomTypesReport')
+data.setCell(30, 2, 'service.statistic.StatisticMockitoTest')
+data.setCell(30, 3, 2);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'shouldCreateEmptyFinanceYearReportWithCorrectTitle')
+data.setCell(31, 2, 'service.statistic.StatisticMockitoTest')
+data.setCell(31, 3, 1);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'shouldCreateEmptyCurrencyTable')
+data.setCell(32, 2, 'service.cantor.CantorMokitoTest')
+data.setCell(32, 3, 1);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'shouldCreateEmptyCustomerTable')
+data.setCell(33, 2, 'service.cantor.CantorMokitoTest')
+data.setCell(33, 3, 0);
+window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 864 ms</span>
+              <div id="times-div-Command_line_suite">
+              </div> <!-- times-div-Command_line_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">service.cantor.CantorMokitoTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">shouldCalculateMoneyExchangeForGivenCurrency(PLN, EUR, 100.0, 25.0, 0.0, 1.0, 1.0, 4.0)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldCalculateMoneyExchangeForGivenCurrency(EUR, PLN, 100.0, 300.0, 100.0, 3.0, 4.0, 1.0)</span>
+                <span class="method-start">602 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldCalculateMoneyExchangeForGivenCurrency(EUR, USD, 100.0, 150.0, 100.0, 3.0, 4.0, 2.0)</span>
+                <span class="method-start">606 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldCalculateMoneyExchangeForGivenCurrency(EUR, EUR, 100.0, 75.0, 100.0, 3.0, 4.0, 4.0)</span>
+                <span class="method-start">609 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldCreateCurrencyTableWithOneRow</span>
+                <span class="method-start">612 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldCreateCustomerTableWithOneRow</span>
+                <span class="method-start">628 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldCreateEmptyCurrencyTable</span>
+                <span class="method-start">638 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldCreateEmptyCustomerTable</span>
+                <span class="method-start">640 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">service.statistic.StatisticMockitoTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">shouldCreateEmptyFinanceMonthReportWithCorrectTitle(Wrzesień, Grudzień, conditions.raport.PeriodOfMonthsCondition@2736af9a)</span>
+                <span class="method-start">643 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldCreateEmptyFinanceMonthReportWithCorrectTitle(Wrzesień, Wrzesień, conditions.raport.MonthCondition@7742bb92)</span>
+                <span class="method-start">672 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldCreateEmptyFinanceMonthReportWithCorrectTitle(Wrzesień, Maj, conditions.raport.PeriodOfMonthsCondition@3e28ab69)</span>
+                <span class="method-start">674 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldCreateEmptyFinanceYearReportWithCorrectTitle(2012, 2013, conditions.raport.PeriodOfYearsCondition@32746450)</span>
+                <span class="method-start">679 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldCreateEmptyFinanceYearReportWithCorrectTitle(2012, 2012, conditions.raport.IntegerCondition@7765da10)</span>
+                <span class="method-start">681 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldCreateEmptyFinanceYearReportWithCorrectTitle(2012, 2011, conditions.raport.PeriodOfYearsCondition@3fcf8dad)</span>
+                <span class="method-start">683 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldCreateEmptyRoomTypesReport</span>
+                <span class="method-start">686 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldCreateEmptyRoomsInTypeReport</span>
+                <span class="method-start">689 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldCreateEmptyServiceReport</span>
+                <span class="method-start">693 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldCreateEmptyServiceTypesReport</span>
+                <span class="method-start">698 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldCreateFinanceMonthReportWithCorrectTitle</span>
+                <span class="method-start">703 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldCreateFinanceYearReportWithCorrectTitle</span>
+                <span class="method-start">759 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldCreateRoomTypesReport</span>
+                <span class="method-start">774 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldCreateRoomsInTypeReport</span>
+                <span class="method-start">790 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldCreateServiceReport</span>
+                <span class="method-start">807 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldCreateServiceTypesReport</span>
+                <span class="method-start">820 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">service.statistic.StatisticTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">shouldCreateEmptyFinanceMonthReport(Wrzesień, Grudzień, conditions.raport.PeriodOfMonthsCondition@454034)</span>
+                <span class="method-start">837 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldCreateEmptyFinanceMonthReport(Wrzesień, Wrzesień, conditions.raport.MonthCondition@427a160f)</span>
+                <span class="method-start">851 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldCreateEmptyFinanceMonthReport(Wrzesień, Maj, conditions.raport.PeriodOfMonthsCondition@5d3e54e1)</span>
+                <span class="method-start">854 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldCreateEmptyFinanceYearReport(2012, 2013, conditions.raport.PeriodOfYearsCondition@600d9a60)</span>
+                <span class="method-start">859 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldCreateEmptyFinanceYearReport(2012, 2012, conditions.raport.IntegerCondition@1d1245e4)</span>
+                <span class="method-start">862 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldCreateEmptyFinanceYearReport(2012, 2011, conditions.raport.PeriodOfYearsCondition@1aaa8aa5)</span>
+                <span class="method-start">866 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldCreateEmptyHotelReport(Raportu z wykorzystania klas pokoi, 2012, Wrzesień, null, null)</span>
+                <span class="method-start">874 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldCreateEmptyHotelReport(Raportu z wykorzystania pokoi w klasie, 2012, Wrzesień, null, pokój jednosobowy)</span>
+                <span class="method-start">879 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldCreateEmptyHotelReport(Raportu z wykorzystania typów usług, 2012, Wrzesień, null, pokój jednosobowy)</span>
+                <span class="method-start">884 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldCreateEmptyHotelReport(Raportu z wybranej uslugi, 2012, Wrzesień, rekreacja, null)</span>
+                <span class="method-start">889 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

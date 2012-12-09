@@ -1,0 +1,249 @@
+<html>
+<head>
+<title>TestNG:  Command line test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Command line test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>34/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Dec 09 12:56:06 CET 2012</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (917 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='service.cantor.CantorMokitoTest.shouldCalculateMoneyExchangeForGivenCurrency()'><b>shouldCalculateMoneyExchangeForGivenCurrency</b><br>Test class: service.cantor.CantorMokitoTest<br>Parameters: PLN, EUR, 100.0, 25.0, 0.0, 1.0, 1.0, 4.0</td>
+<td></td>
+<td>0</td>
+<td>service.cantor.CantorMokitoTest@16c82102</td></tr>
+<tr>
+<td title='service.cantor.CantorMokitoTest.shouldCalculateMoneyExchangeForGivenCurrency()'><b>shouldCalculateMoneyExchangeForGivenCurrency</b><br>Test class: service.cantor.CantorMokitoTest<br>Parameters: EUR, PLN, 100.0, 300.0, 100.0, 3.0, 4.0, 1.0</td>
+<td></td>
+<td>0</td>
+<td>service.cantor.CantorMokitoTest@16c82102</td></tr>
+<tr>
+<td title='service.cantor.CantorMokitoTest.shouldCalculateMoneyExchangeForGivenCurrency()'><b>shouldCalculateMoneyExchangeForGivenCurrency</b><br>Test class: service.cantor.CantorMokitoTest<br>Parameters: EUR, USD, 100.0, 150.0, 100.0, 3.0, 4.0, 2.0</td>
+<td></td>
+<td>0</td>
+<td>service.cantor.CantorMokitoTest@16c82102</td></tr>
+<tr>
+<td title='service.cantor.CantorMokitoTest.shouldCalculateMoneyExchangeForGivenCurrency()'><b>shouldCalculateMoneyExchangeForGivenCurrency</b><br>Test class: service.cantor.CantorMokitoTest<br>Parameters: EUR, EUR, 100.0, 75.0, 100.0, 3.0, 4.0, 4.0</td>
+<td></td>
+<td>0</td>
+<td>service.cantor.CantorMokitoTest@16c82102</td></tr>
+<tr>
+<td title='service.cantor.CantorMokitoTest.shouldCreateCurrencyTableWithOneRow()'><b>shouldCreateCurrencyTableWithOneRow</b><br>Test class: service.cantor.CantorMokitoTest</td>
+<td></td>
+<td>0</td>
+<td>service.cantor.CantorMokitoTest@16c82102</td></tr>
+<tr>
+<td title='service.cantor.CantorMokitoTest.shouldCreateCustomerTableWithOneRow()'><b>shouldCreateCustomerTableWithOneRow</b><br>Test class: service.cantor.CantorMokitoTest</td>
+<td></td>
+<td>0</td>
+<td>service.cantor.CantorMokitoTest@16c82102</td></tr>
+<tr>
+<td title='service.cantor.CantorMokitoTest.shouldCreateEmptyCurrencyTable()'><b>shouldCreateEmptyCurrencyTable</b><br>Test class: service.cantor.CantorMokitoTest</td>
+<td></td>
+<td>0</td>
+<td>service.cantor.CantorMokitoTest@16c82102</td></tr>
+<tr>
+<td title='service.cantor.CantorMokitoTest.shouldCreateEmptyCustomerTable()'><b>shouldCreateEmptyCustomerTable</b><br>Test class: service.cantor.CantorMokitoTest</td>
+<td></td>
+<td>0</td>
+<td>service.cantor.CantorMokitoTest@16c82102</td></tr>
+<tr>
+<td title='service.statistic.StatisticTest.shouldCreateEmptyFinanceMonthReport()'><b>shouldCreateEmptyFinanceMonthReport</b><br>Test class: service.statistic.StatisticTest<br>Parameters: Wrzesień, Grudzień, conditions.raport.PeriodOfMonthsCondition@454034</td>
+<td></td>
+<td>0</td>
+<td>service.statistic.StatisticTest@21669fc6</td></tr>
+<tr>
+<td title='service.statistic.StatisticTest.shouldCreateEmptyFinanceMonthReport()'><b>shouldCreateEmptyFinanceMonthReport</b><br>Test class: service.statistic.StatisticTest<br>Parameters: Wrzesień, Wrzesień, conditions.raport.MonthCondition@427a160f</td>
+<td></td>
+<td>0</td>
+<td>service.statistic.StatisticTest@21669fc6</td></tr>
+<tr>
+<td title='service.statistic.StatisticTest.shouldCreateEmptyFinanceMonthReport()'><b>shouldCreateEmptyFinanceMonthReport</b><br>Test class: service.statistic.StatisticTest<br>Parameters: Wrzesień, Maj, conditions.raport.PeriodOfMonthsCondition@5d3e54e1</td>
+<td></td>
+<td>0</td>
+<td>service.statistic.StatisticTest@21669fc6</td></tr>
+<tr>
+<td title='service.statistic.StatisticMockitoTest.shouldCreateEmptyFinanceMonthReportWithCorrectTitle()'><b>shouldCreateEmptyFinanceMonthReportWithCorrectTitle</b><br>Test class: service.statistic.StatisticMockitoTest<br>Parameters: Wrzesień, Grudzień, conditions.raport.PeriodOfMonthsCondition@2736af9a</td>
+<td></td>
+<td>0</td>
+<td>service.statistic.StatisticMockitoTest@5883914b</td></tr>
+<tr>
+<td title='service.statistic.StatisticMockitoTest.shouldCreateEmptyFinanceMonthReportWithCorrectTitle()'><b>shouldCreateEmptyFinanceMonthReportWithCorrectTitle</b><br>Test class: service.statistic.StatisticMockitoTest<br>Parameters: Wrzesień, Wrzesień, conditions.raport.MonthCondition@7742bb92</td>
+<td></td>
+<td>0</td>
+<td>service.statistic.StatisticMockitoTest@5883914b</td></tr>
+<tr>
+<td title='service.statistic.StatisticMockitoTest.shouldCreateEmptyFinanceMonthReportWithCorrectTitle()'><b>shouldCreateEmptyFinanceMonthReportWithCorrectTitle</b><br>Test class: service.statistic.StatisticMockitoTest<br>Parameters: Wrzesień, Maj, conditions.raport.PeriodOfMonthsCondition@3e28ab69</td>
+<td></td>
+<td>0</td>
+<td>service.statistic.StatisticMockitoTest@5883914b</td></tr>
+<tr>
+<td title='service.statistic.StatisticTest.shouldCreateEmptyFinanceYearReport()'><b>shouldCreateEmptyFinanceYearReport</b><br>Test class: service.statistic.StatisticTest<br>Parameters: 2012, 2013, conditions.raport.PeriodOfYearsCondition@600d9a60</td>
+<td></td>
+<td>0</td>
+<td>service.statistic.StatisticTest@21669fc6</td></tr>
+<tr>
+<td title='service.statistic.StatisticTest.shouldCreateEmptyFinanceYearReport()'><b>shouldCreateEmptyFinanceYearReport</b><br>Test class: service.statistic.StatisticTest<br>Parameters: 2012, 2012, conditions.raport.IntegerCondition@1d1245e4</td>
+<td></td>
+<td>0</td>
+<td>service.statistic.StatisticTest@21669fc6</td></tr>
+<tr>
+<td title='service.statistic.StatisticTest.shouldCreateEmptyFinanceYearReport()'><b>shouldCreateEmptyFinanceYearReport</b><br>Test class: service.statistic.StatisticTest<br>Parameters: 2012, 2011, conditions.raport.PeriodOfYearsCondition@1aaa8aa5</td>
+<td></td>
+<td>0</td>
+<td>service.statistic.StatisticTest@21669fc6</td></tr>
+<tr>
+<td title='service.statistic.StatisticMockitoTest.shouldCreateEmptyFinanceYearReportWithCorrectTitle()'><b>shouldCreateEmptyFinanceYearReportWithCorrectTitle</b><br>Test class: service.statistic.StatisticMockitoTest<br>Parameters: 2012, 2013, conditions.raport.PeriodOfYearsCondition@32746450</td>
+<td></td>
+<td>0</td>
+<td>service.statistic.StatisticMockitoTest@5883914b</td></tr>
+<tr>
+<td title='service.statistic.StatisticMockitoTest.shouldCreateEmptyFinanceYearReportWithCorrectTitle()'><b>shouldCreateEmptyFinanceYearReportWithCorrectTitle</b><br>Test class: service.statistic.StatisticMockitoTest<br>Parameters: 2012, 2012, conditions.raport.IntegerCondition@7765da10</td>
+<td></td>
+<td>0</td>
+<td>service.statistic.StatisticMockitoTest@5883914b</td></tr>
+<tr>
+<td title='service.statistic.StatisticMockitoTest.shouldCreateEmptyFinanceYearReportWithCorrectTitle()'><b>shouldCreateEmptyFinanceYearReportWithCorrectTitle</b><br>Test class: service.statistic.StatisticMockitoTest<br>Parameters: 2012, 2011, conditions.raport.PeriodOfYearsCondition@3fcf8dad</td>
+<td></td>
+<td>0</td>
+<td>service.statistic.StatisticMockitoTest@5883914b</td></tr>
+<tr>
+<td title='service.statistic.StatisticTest.shouldCreateEmptyHotelReport()'><b>shouldCreateEmptyHotelReport</b><br>Test class: service.statistic.StatisticTest<br>Parameters: Raportu z wykorzystania klas pokoi, 2012, Wrzesień, null, null</td>
+<td></td>
+<td>0</td>
+<td>service.statistic.StatisticTest@21669fc6</td></tr>
+<tr>
+<td title='service.statistic.StatisticTest.shouldCreateEmptyHotelReport()'><b>shouldCreateEmptyHotelReport</b><br>Test class: service.statistic.StatisticTest<br>Parameters: Raportu z wykorzystania pokoi w klasie, 2012, Wrzesień, null, pokój jednosobowy</td>
+<td></td>
+<td>0</td>
+<td>service.statistic.StatisticTest@21669fc6</td></tr>
+<tr>
+<td title='service.statistic.StatisticTest.shouldCreateEmptyHotelReport()'><b>shouldCreateEmptyHotelReport</b><br>Test class: service.statistic.StatisticTest<br>Parameters: Raportu z wykorzystania typów usług, 2012, Wrzesień, null, pokój jednosobowy</td>
+<td></td>
+<td>0</td>
+<td>service.statistic.StatisticTest@21669fc6</td></tr>
+<tr>
+<td title='service.statistic.StatisticTest.shouldCreateEmptyHotelReport()'><b>shouldCreateEmptyHotelReport</b><br>Test class: service.statistic.StatisticTest<br>Parameters: Raportu z wybranej uslugi, 2012, Wrzesień, rekreacja, null</td>
+<td></td>
+<td>0</td>
+<td>service.statistic.StatisticTest@21669fc6</td></tr>
+<tr>
+<td title='service.statistic.StatisticMockitoTest.shouldCreateEmptyRoomTypesReport()'><b>shouldCreateEmptyRoomTypesReport</b><br>Test class: service.statistic.StatisticMockitoTest</td>
+<td></td>
+<td>0</td>
+<td>service.statistic.StatisticMockitoTest@5883914b</td></tr>
+<tr>
+<td title='service.statistic.StatisticMockitoTest.shouldCreateEmptyRoomsInTypeReport()'><b>shouldCreateEmptyRoomsInTypeReport</b><br>Test class: service.statistic.StatisticMockitoTest</td>
+<td></td>
+<td>0</td>
+<td>service.statistic.StatisticMockitoTest@5883914b</td></tr>
+<tr>
+<td title='service.statistic.StatisticMockitoTest.shouldCreateEmptyServiceReport()'><b>shouldCreateEmptyServiceReport</b><br>Test class: service.statistic.StatisticMockitoTest</td>
+<td></td>
+<td>0</td>
+<td>service.statistic.StatisticMockitoTest@5883914b</td></tr>
+<tr>
+<td title='service.statistic.StatisticMockitoTest.shouldCreateEmptyServiceTypesReport()'><b>shouldCreateEmptyServiceTypesReport</b><br>Test class: service.statistic.StatisticMockitoTest</td>
+<td></td>
+<td>0</td>
+<td>service.statistic.StatisticMockitoTest@5883914b</td></tr>
+<tr>
+<td title='service.statistic.StatisticMockitoTest.shouldCreateFinanceMonthReportWithCorrectTitle()'><b>shouldCreateFinanceMonthReportWithCorrectTitle</b><br>Test class: service.statistic.StatisticMockitoTest</td>
+<td></td>
+<td>0</td>
+<td>service.statistic.StatisticMockitoTest@5883914b</td></tr>
+<tr>
+<td title='service.statistic.StatisticMockitoTest.shouldCreateFinanceYearReportWithCorrectTitle()'><b>shouldCreateFinanceYearReportWithCorrectTitle</b><br>Test class: service.statistic.StatisticMockitoTest</td>
+<td></td>
+<td>0</td>
+<td>service.statistic.StatisticMockitoTest@5883914b</td></tr>
+<tr>
+<td title='service.statistic.StatisticMockitoTest.shouldCreateRoomTypesReport()'><b>shouldCreateRoomTypesReport</b><br>Test class: service.statistic.StatisticMockitoTest</td>
+<td></td>
+<td>0</td>
+<td>service.statistic.StatisticMockitoTest@5883914b</td></tr>
+<tr>
+<td title='service.statistic.StatisticMockitoTest.shouldCreateRoomsInTypeReport()'><b>shouldCreateRoomsInTypeReport</b><br>Test class: service.statistic.StatisticMockitoTest</td>
+<td></td>
+<td>0</td>
+<td>service.statistic.StatisticMockitoTest@5883914b</td></tr>
+<tr>
+<td title='service.statistic.StatisticMockitoTest.shouldCreateServiceReport()'><b>shouldCreateServiceReport</b><br>Test class: service.statistic.StatisticMockitoTest</td>
+<td></td>
+<td>0</td>
+<td>service.statistic.StatisticMockitoTest@5883914b</td></tr>
+<tr>
+<td title='service.statistic.StatisticMockitoTest.shouldCreateServiceTypesReport()'><b>shouldCreateServiceTypesReport</b><br>Test class: service.statistic.StatisticMockitoTest</td>
+<td></td>
+<td>0</td>
+<td>service.statistic.StatisticMockitoTest@5883914b</td></tr>
+</table><p>
+</body>
+</html>

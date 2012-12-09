@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="34" passed="34">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="917" started-at="2012-12-09T11:56:06Z" finished-at="2012-12-09T11:56:07Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="917" started-at="2012-12-09T11:56:06Z" finished-at="2012-12-09T11:56:07Z">
+      <class name="service.statistic.StatisticTest">
+        <test-method status="PASS" signature="shouldCreateEmptyFinanceMonthReport(service.dictionary.MONTH, service.dictionary.MONTH, org.fest.assertions.Condition)[pri:0, instance:service.statistic.StatisticTest@21669fc6]" name="shouldCreateEmptyFinanceMonthReport" duration-ms="14" started-at="2012-12-09T12:56:07Z" data-provider="prepareCasesForFinanceMonthReport" finished-at="2012-12-09T12:56:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Wrzesień]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Grudzień]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[conditions.raport.PeriodOfMonthsCondition@454034]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldCreateEmptyFinanceMonthReport -->
+        <test-method status="PASS" signature="shouldCreateEmptyFinanceMonthReport(service.dictionary.MONTH, service.dictionary.MONTH, org.fest.assertions.Condition)[pri:0, instance:service.statistic.StatisticTest@21669fc6]" name="shouldCreateEmptyFinanceMonthReport" duration-ms="3" started-at="2012-12-09T12:56:07Z" data-provider="prepareCasesForFinanceMonthReport" finished-at="2012-12-09T12:56:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Wrzesień]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Wrzesień]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[conditions.raport.MonthCondition@427a160f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldCreateEmptyFinanceMonthReport -->
+        <test-method status="PASS" signature="shouldCreateEmptyFinanceMonthReport(service.dictionary.MONTH, service.dictionary.MONTH, org.fest.assertions.Condition)[pri:0, instance:service.statistic.StatisticTest@21669fc6]" name="shouldCreateEmptyFinanceMonthReport" duration-ms="4" started-at="2012-12-09T12:56:07Z" data-provider="prepareCasesForFinanceMonthReport" finished-at="2012-12-09T12:56:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Wrzesień]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Maj]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[conditions.raport.PeriodOfMonthsCondition@5d3e54e1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldCreateEmptyFinanceMonthReport -->
+        <test-method status="PASS" signature="shouldCreateEmptyFinanceYearReport(int, int, org.fest.assertions.Condition)[pri:0, instance:service.statistic.StatisticTest@21669fc6]" name="shouldCreateEmptyFinanceYearReport" duration-ms="3" started-at="2012-12-09T12:56:07Z" data-provider="prepareCasesForFinanceYearReport" finished-at="2012-12-09T12:56:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2012]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2013]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[conditions.raport.PeriodOfYearsCondition@600d9a60]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldCreateEmptyFinanceYearReport -->
+        <test-method status="PASS" signature="shouldCreateEmptyFinanceYearReport(int, int, org.fest.assertions.Condition)[pri:0, instance:service.statistic.StatisticTest@21669fc6]" name="shouldCreateEmptyFinanceYearReport" duration-ms="4" started-at="2012-12-09T12:56:07Z" data-provider="prepareCasesForFinanceYearReport" finished-at="2012-12-09T12:56:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2012]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2012]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[conditions.raport.IntegerCondition@1d1245e4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldCreateEmptyFinanceYearReport -->
+        <test-method status="PASS" signature="shouldCreateEmptyFinanceYearReport(int, int, org.fest.assertions.Condition)[pri:0, instance:service.statistic.StatisticTest@21669fc6]" name="shouldCreateEmptyFinanceYearReport" duration-ms="5" started-at="2012-12-09T12:56:07Z" data-provider="prepareCasesForFinanceYearReport" finished-at="2012-12-09T12:56:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2012]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2011]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[conditions.raport.PeriodOfYearsCondition@1aaa8aa5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldCreateEmptyFinanceYearReport -->
+        <test-method status="PASS" signature="shouldCreateEmptyHotelReport(service.statictic.REPORT_KIND, int, service.dictionary.MONTH, java.lang.String, java.lang.String)[pri:0, instance:service.statistic.StatisticTest@21669fc6]" name="shouldCreateEmptyHotelReport" duration-ms="5" started-at="2012-12-09T12:56:07Z" data-provider="prepareCasesForHotelReport" finished-at="2012-12-09T12:56:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Raportu z wykorzystania klas pokoi]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2012]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Wrzesień]]>
+              </value>
+            </param>
+            <param index="3">
+              <value is-null="true"/>
+            </param>
+            <param index="4">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldCreateEmptyHotelReport -->
+        <test-method status="PASS" signature="shouldCreateEmptyHotelReport(service.statictic.REPORT_KIND, int, service.dictionary.MONTH, java.lang.String, java.lang.String)[pri:0, instance:service.statistic.StatisticTest@21669fc6]" name="shouldCreateEmptyHotelReport" duration-ms="5" started-at="2012-12-09T12:56:07Z" data-provider="prepareCasesForHotelReport" finished-at="2012-12-09T12:56:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Raportu z wykorzystania pokoi w klasie]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2012]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Wrzesień]]>
+              </value>
+            </param>
+            <param index="3">
+              <value is-null="true"/>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[pokój jednosobowy]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldCreateEmptyHotelReport -->
+        <test-method status="PASS" signature="shouldCreateEmptyHotelReport(service.statictic.REPORT_KIND, int, service.dictionary.MONTH, java.lang.String, java.lang.String)[pri:0, instance:service.statistic.StatisticTest@21669fc6]" name="shouldCreateEmptyHotelReport" duration-ms="4" started-at="2012-12-09T12:56:07Z" data-provider="prepareCasesForHotelReport" finished-at="2012-12-09T12:56:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Raportu z wykorzystania typów usług]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2012]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Wrzesień]]>
+              </value>
+            </param>
+            <param index="3">
+              <value is-null="true"/>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[pokój jednosobowy]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldCreateEmptyHotelReport -->
+        <test-method status="PASS" signature="shouldCreateEmptyHotelReport(service.statictic.REPORT_KIND, int, service.dictionary.MONTH, java.lang.String, java.lang.String)[pri:0, instance:service.statistic.StatisticTest@21669fc6]" name="shouldCreateEmptyHotelReport" duration-ms="6" started-at="2012-12-09T12:56:07Z" data-provider="prepareCasesForHotelReport" finished-at="2012-12-09T12:56:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Raportu z wybranej uslugi]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2012]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Wrzesień]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[rekreacja]]>
+              </value>
+            </param>
+            <param index="4">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldCreateEmptyHotelReport -->
+      </class> <!-- service.statistic.StatisticTest -->
+      <class name="service.cantor.CantorMokitoTest">
+        <test-method status="PASS" signature="shouldCalculateMoneyExchangeForGivenCurrency(service.cantor.CURRENCY, service.cantor.CURRENCY, float, float, float, float, float, float)[pri:0, instance:service.cantor.CantorMokitoTest@16c82102]" name="shouldCalculateMoneyExchangeForGivenCurrency" duration-ms="602" started-at="2012-12-09T12:56:06Z" data-provider="prepareCasesForCalculateMoneyExchange" finished-at="2012-12-09T12:56:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[PLN]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[EUR]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[100.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[25.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[1.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[1.0]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[4.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldCalculateMoneyExchangeForGivenCurrency -->
+        <test-method status="PASS" signature="shouldCalculateMoneyExchangeForGivenCurrency(service.cantor.CURRENCY, service.cantor.CURRENCY, float, float, float, float, float, float)[pri:0, instance:service.cantor.CantorMokitoTest@16c82102]" name="shouldCalculateMoneyExchangeForGivenCurrency" duration-ms="3" started-at="2012-12-09T12:56:07Z" data-provider="prepareCasesForCalculateMoneyExchange" finished-at="2012-12-09T12:56:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EUR]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PLN]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[100.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[300.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[100.0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[4.0]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[1.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldCalculateMoneyExchangeForGivenCurrency -->
+        <test-method status="PASS" signature="shouldCalculateMoneyExchangeForGivenCurrency(service.cantor.CURRENCY, service.cantor.CURRENCY, float, float, float, float, float, float)[pri:0, instance:service.cantor.CantorMokitoTest@16c82102]" name="shouldCalculateMoneyExchangeForGivenCurrency" duration-ms="2" started-at="2012-12-09T12:56:07Z" data-provider="prepareCasesForCalculateMoneyExchange" finished-at="2012-12-09T12:56:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EUR]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[USD]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[100.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[150.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[100.0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[4.0]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldCalculateMoneyExchangeForGivenCurrency -->
+        <test-method status="PASS" signature="shouldCalculateMoneyExchangeForGivenCurrency(service.cantor.CURRENCY, service.cantor.CURRENCY, float, float, float, float, float, float)[pri:0, instance:service.cantor.CantorMokitoTest@16c82102]" name="shouldCalculateMoneyExchangeForGivenCurrency" duration-ms="2" started-at="2012-12-09T12:56:07Z" data-provider="prepareCasesForCalculateMoneyExchange" finished-at="2012-12-09T12:56:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EUR]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[EUR]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[100.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[75.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[100.0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[4.0]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[4.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldCalculateMoneyExchangeForGivenCurrency -->
+        <test-method status="PASS" signature="shouldCreateCurrencyTableWithOneRow()[pri:0, instance:service.cantor.CantorMokitoTest@16c82102]" name="shouldCreateCurrencyTableWithOneRow" duration-ms="15" started-at="2012-12-09T12:56:07Z" finished-at="2012-12-09T12:56:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldCreateCurrencyTableWithOneRow -->
+        <test-method status="PASS" signature="shouldCreateCustomerTableWithOneRow()[pri:0, instance:service.cantor.CantorMokitoTest@16c82102]" name="shouldCreateCustomerTableWithOneRow" duration-ms="9" started-at="2012-12-09T12:56:07Z" finished-at="2012-12-09T12:56:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldCreateCustomerTableWithOneRow -->
+        <test-method status="PASS" signature="shouldCreateEmptyCurrencyTable()[pri:0, instance:service.cantor.CantorMokitoTest@16c82102]" name="shouldCreateEmptyCurrencyTable" duration-ms="1" started-at="2012-12-09T12:56:07Z" finished-at="2012-12-09T12:56:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldCreateEmptyCurrencyTable -->
+        <test-method status="PASS" signature="shouldCreateEmptyCustomerTable()[pri:0, instance:service.cantor.CantorMokitoTest@16c82102]" name="shouldCreateEmptyCustomerTable" duration-ms="0" started-at="2012-12-09T12:56:07Z" finished-at="2012-12-09T12:56:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldCreateEmptyCustomerTable -->
+      </class> <!-- service.cantor.CantorMokitoTest -->
+      <class name="service.statistic.StatisticMockitoTest">
+        <test-method status="PASS" signature="shouldCreateEmptyFinanceMonthReportWithCorrectTitle(service.dictionary.MONTH, service.dictionary.MONTH, org.fest.assertions.Condition)[pri:0, instance:service.statistic.StatisticMockitoTest@5883914b]" name="shouldCreateEmptyFinanceMonthReportWithCorrectTitle" duration-ms="29" started-at="2012-12-09T12:56:07Z" data-provider="prepareCasesForFinanceMonthReport" finished-at="2012-12-09T12:56:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Wrzesień]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Grudzień]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[conditions.raport.PeriodOfMonthsCondition@2736af9a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldCreateEmptyFinanceMonthReportWithCorrectTitle -->
+        <test-method status="PASS" signature="shouldCreateEmptyFinanceMonthReportWithCorrectTitle(service.dictionary.MONTH, service.dictionary.MONTH, org.fest.assertions.Condition)[pri:0, instance:service.statistic.StatisticMockitoTest@5883914b]" name="shouldCreateEmptyFinanceMonthReportWithCorrectTitle" duration-ms="2" started-at="2012-12-09T12:56:07Z" data-provider="prepareCasesForFinanceMonthReport" finished-at="2012-12-09T12:56:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Wrzesień]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Wrzesień]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[conditions.raport.MonthCondition@7742bb92]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldCreateEmptyFinanceMonthReportWithCorrectTitle -->
+        <test-method status="PASS" signature="shouldCreateEmptyFinanceMonthReportWithCorrectTitle(service.dictionary.MONTH, service.dictionary.MONTH, org.fest.assertions.Condition)[pri:0, instance:service.statistic.StatisticMockitoTest@5883914b]" name="shouldCreateEmptyFinanceMonthReportWithCorrectTitle" duration-ms="2" started-at="2012-12-09T12:56:07Z" data-provider="prepareCasesForFinanceMonthReport" finished-at="2012-12-09T12:56:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Wrzesień]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Maj]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[conditions.raport.PeriodOfMonthsCondition@3e28ab69]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldCreateEmptyFinanceMonthReportWithCorrectTitle -->
+        <test-method status="PASS" signature="shouldCreateEmptyFinanceYearReportWithCorrectTitle(int, int, org.fest.assertions.Condition)[pri:0, instance:service.statistic.StatisticMockitoTest@5883914b]" name="shouldCreateEmptyFinanceYearReportWithCorrectTitle" duration-ms="1" started-at="2012-12-09T12:56:07Z" data-provider="prepareCasesForFinanceYearReport" finished-at="2012-12-09T12:56:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2012]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2013]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[conditions.raport.PeriodOfYearsCondition@32746450]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldCreateEmptyFinanceYearReportWithCorrectTitle -->
+        <test-method status="PASS" signature="shouldCreateEmptyFinanceYearReportWithCorrectTitle(int, int, org.fest.assertions.Condition)[pri:0, instance:service.statistic.StatisticMockitoTest@5883914b]" name="shouldCreateEmptyFinanceYearReportWithCorrectTitle" duration-ms="2" started-at="2012-12-09T12:56:07Z" data-provider="prepareCasesForFinanceYearReport" finished-at="2012-12-09T12:56:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2012]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2012]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[conditions.raport.IntegerCondition@7765da10]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldCreateEmptyFinanceYearReportWithCorrectTitle -->
+        <test-method status="PASS" signature="shouldCreateEmptyFinanceYearReportWithCorrectTitle(int, int, org.fest.assertions.Condition)[pri:0, instance:service.statistic.StatisticMockitoTest@5883914b]" name="shouldCreateEmptyFinanceYearReportWithCorrectTitle" duration-ms="2" started-at="2012-12-09T12:56:07Z" data-provider="prepareCasesForFinanceYearReport" finished-at="2012-12-09T12:56:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2012]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2011]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[conditions.raport.PeriodOfYearsCondition@3fcf8dad]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldCreateEmptyFinanceYearReportWithCorrectTitle -->
+        <test-method status="PASS" signature="shouldCreateEmptyRoomTypesReport()[pri:0, instance:service.statistic.StatisticMockitoTest@5883914b]" name="shouldCreateEmptyRoomTypesReport" duration-ms="2" started-at="2012-12-09T12:56:07Z" finished-at="2012-12-09T12:56:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldCreateEmptyRoomTypesReport -->
+        <test-method status="PASS" signature="shouldCreateEmptyRoomsInTypeReport()[pri:0, instance:service.statistic.StatisticMockitoTest@5883914b]" name="shouldCreateEmptyRoomsInTypeReport" duration-ms="3" started-at="2012-12-09T12:56:07Z" finished-at="2012-12-09T12:56:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldCreateEmptyRoomsInTypeReport -->
+        <test-method status="PASS" signature="shouldCreateEmptyServiceReport()[pri:0, instance:service.statistic.StatisticMockitoTest@5883914b]" name="shouldCreateEmptyServiceReport" duration-ms="4" started-at="2012-12-09T12:56:07Z" finished-at="2012-12-09T12:56:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldCreateEmptyServiceReport -->
+        <test-method status="PASS" signature="shouldCreateEmptyServiceTypesReport()[pri:0, instance:service.statistic.StatisticMockitoTest@5883914b]" name="shouldCreateEmptyServiceTypesReport" duration-ms="3" started-at="2012-12-09T12:56:07Z" finished-at="2012-12-09T12:56:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldCreateEmptyServiceTypesReport -->
+        <test-method status="PASS" signature="shouldCreateFinanceMonthReportWithCorrectTitle()[pri:0, instance:service.statistic.StatisticMockitoTest@5883914b]" name="shouldCreateFinanceMonthReportWithCorrectTitle" duration-ms="54" started-at="2012-12-09T12:56:07Z" finished-at="2012-12-09T12:56:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldCreateFinanceMonthReportWithCorrectTitle -->
+        <test-method status="PASS" signature="shouldCreateFinanceYearReportWithCorrectTitle()[pri:0, instance:service.statistic.StatisticMockitoTest@5883914b]" name="shouldCreateFinanceYearReportWithCorrectTitle" duration-ms="15" started-at="2012-12-09T12:56:07Z" finished-at="2012-12-09T12:56:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldCreateFinanceYearReportWithCorrectTitle -->
+        <test-method status="PASS" signature="shouldCreateRoomTypesReport()[pri:0, instance:service.statistic.StatisticMockitoTest@5883914b]" name="shouldCreateRoomTypesReport" duration-ms="15" started-at="2012-12-09T12:56:07Z" finished-at="2012-12-09T12:56:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldCreateRoomTypesReport -->
+        <test-method status="PASS" signature="shouldCreateRoomsInTypeReport()[pri:0, instance:service.statistic.StatisticMockitoTest@5883914b]" name="shouldCreateRoomsInTypeReport" duration-ms="16" started-at="2012-12-09T12:56:07Z" finished-at="2012-12-09T12:56:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldCreateRoomsInTypeReport -->
+        <test-method status="PASS" signature="shouldCreateServiceReport()[pri:0, instance:service.statistic.StatisticMockitoTest@5883914b]" name="shouldCreateServiceReport" duration-ms="12" started-at="2012-12-09T12:56:07Z" finished-at="2012-12-09T12:56:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldCreateServiceReport -->
+        <test-method status="PASS" signature="shouldCreateServiceTypesReport()[pri:0, instance:service.statistic.StatisticMockitoTest@5883914b]" name="shouldCreateServiceTypesReport" duration-ms="15" started-at="2012-12-09T12:56:07Z" finished-at="2012-12-09T12:56:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldCreateServiceTypesReport -->
+      </class> <!-- service.statistic.StatisticMockitoTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>
